@@ -44,9 +44,9 @@ const ProjectPage: React.FC<{ params: { id: number } }> = ({ params: { id } }) =
                     <div>
                         <h3>Key Features</h3>
                         <ul>
-                            {project.key_features.map((keyFeature: any) => {
+                            {project.key_features.map((keyFeature: any, index: number) => {
                                 return (
-                                    <li>
+                                    <li key={`${keyFeature}_${index}`}>
                                         <h5>{keyFeature.name}</h5>
                                         <p>{keyFeature.feature}</p>
                                     </li>
@@ -57,9 +57,9 @@ const ProjectPage: React.FC<{ params: { id: number } }> = ({ params: { id } }) =
                     <div>
                         <h3>Benefits</h3>
                         <ul>
-                            {project.benefits.map((benefit: any) => {
+                            {project.benefits.map((benefit: any, index: number) => {
                                 return (
-                                    <li>
+                                    <li key={`${benefit}_${index}`}>
                                         <h5>{benefit.name}</h5>
                                         <p>{benefit.feature}</p>
                                     </li>

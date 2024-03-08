@@ -21,8 +21,10 @@ const Details: React.FC<{
                     {time} | {address}
                 </span>
                 <ul className="mt-2 flex flex-col gap-2 ml-5">
-                    {work.map(bullet => (
-                        <li className="font-medium w-full list-disc">{bullet}</li>
+                    {work.map((bullet, index) => (
+                        <li key={`${bullet}_${index}`} className="font-medium w-full list-disc">
+                            {bullet}
+                        </li>
                     ))}
                 </ul>
             </div>

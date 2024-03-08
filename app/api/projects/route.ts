@@ -1,7 +1,6 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import projects from './data.json';
-import { NextApiRequest } from 'next';
 
-export async function GET(request: NextApiRequest) {
+export async function GET(request: Request | NextRequest) {
     return NextResponse.json(projects);
 }
