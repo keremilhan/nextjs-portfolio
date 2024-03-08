@@ -82,7 +82,7 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                         className={`w-6 rounded-full ${isOpen ? 'bg-dark dark:bg-light' : 'bg-light dark:bg-dark'}`}
                     >
-                        <GithubIcon />
+                        <GithubIcon className={`${mode === 'dark' ? 'fill-light' : 'fill-dark'}`} />
                     </motion.a>
                     <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <TwitterIcon />
