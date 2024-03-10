@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <body className={montserrat.className}>
-                <main className="bg-light w-full min-h-screen  dark:bg-dark">
+                <main className="bg-light w-full min-h-screen dark:bg-dark p-32 !pt-0 xl:p-24 lg:p-16 md:p-12 sm:p-8">
                     <Navbar />
                     {children}
                     <Footer />
