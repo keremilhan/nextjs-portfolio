@@ -9,7 +9,7 @@ import lightBulb from '../public/images/svgs/miscellaneous_icons_1.svg';
 export default function Home() {
     return (
         <main className="flex items-center text-dark w-full min-h-screen dark:text-light md:items-start md:min-h-fit">
-            <div className="flex items-center justify-between w-full lg:flex-col">
+            <div className="flex items-center justify-between w-full lg:flex-col lg:mb-0 mb-auto">
                 <div className="w-1/3 m-auto md:w-full">
                     <Image priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" src={profilePic} alt="Keremİlhan" className="w-full h-auto lg:hidden md:inline-block md:w-full" />
                 </div>

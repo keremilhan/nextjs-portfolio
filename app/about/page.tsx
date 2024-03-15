@@ -37,7 +37,7 @@ const AboutPage = () => {
             <AnimatedText text="Passion Fuels Purpose!" className="mb-16 sm:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
             <div className="grid w-full grid-cols-8 gap-16 z-0 sm:gap-10">
                 <div className="col-span-3 xl:col-span-4 md:col-span-8 flex flex-col items-start justify-start gap-4 md:order-2">
-                    <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 ">About me</h2>
+                    <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">About me</h2>
                     <p className="font-medium">
                         Hi, I&apos;m Kerem, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience in the field. I am
                         always looking for new and innovative ways to bring my clients&apos; visions to life.
