@@ -53,9 +53,25 @@ const Experience = () => {
                         ]}
                     />
                     <Details
+                        position="Tech Mentor"
+                        company="Independent/Personal Initiative"
+                        companyLink="https://keremilhan-portfolio.vercel.app"
+                        time="Oct 2022 - Present"
+                        address="Remote"
+                        work={[
+                            'Providing one-on-one mentorship sessions to individuals interested in breaking into the tech industry.',
+                            'Offering guidance on technical skills development, career planning, and job search strategies.',
+                            'Sharing industry insights, best practices, and resources to support mentees in their journey.',
+                            'Tailoring mentorship approaches to meet the unique needs and goals of each mentee.',
+                            'Collaborating with mentees to identify opportunities for skill enhancement and professional growth.',
+                            'Successfully mentored 5 individuals, helping them secure internships, entry-level positions, and career transitions within the tech sector.',
+                            'Received positive feedback from mentees for providing valuable guidance, support, and encouragement throughout their career journey.',
+                        ]}
+                    />
+                    <Details
                         position="Software Developer"
                         company="Freelance"
-                        companyLink="https://www.github.com/keremilhan"
+                        companyLink="https://keremilhan-portfolio.vercel.app"
                         time="Jan 2024 - Present"
                         address="Netherlands"
                         work={[
@@ -69,7 +85,7 @@ const Experience = () => {
                         position="Software Developer"
                         company="Perculus"
                         companyLink="https://www.perculus.com"
-                        time="Aug 2022 - Present"
+                        time="Aug 2022 - Jan 2024"
                         address="Türkiye"
                         work={[
                             "Successfully developed and launched unique icebreaker activities for the company's product, resulting in a significant increase in sales and customer satisfaction.",

@@ -7,9 +7,11 @@ import React, { useEffect, useState } from 'react';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 import project2 from '../../public/images/projects/portfolio-cover-image.jpg';
 import jobsterImg from '../../public/images/projects/jobster-app.jpg';
+import keremBoardImg from '../../public/images/projects/kerem-board.png';
+import portfolioImg from '../../public/images/projects/portfolio.png';
+import communityEventsImg from '../../public/images/projects/community-events.png';
 import { motion } from 'framer-motion';
 import useThemeSwitcher from '@/components/hooks/useThemeSwitcher';
-import { userAgent } from 'next/server';
 
 const FramerImage = motion(Image);
 
@@ -25,7 +27,11 @@ const FeaturedProject: React.FC<{
     return (
         <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 -right-3 -z-10 w-[100.5%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
-            <Link href={`/projects/${id}`} className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full" title="Click for Project Details">
+            <Link
+                href={`/projects/${id}`}
+                className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full border-2 border-spacing-4 border-dark/75 dark:border-light"
+                title="Click for Project Details"
+            >
                 <FramerImage
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
@@ -104,13 +110,35 @@ const ProjectsPage = () => {
             <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                 <div className="col-span-12 z-0">
                     <FeaturedProject
-                        title="Kanban Board"
-                        id={2}
-                        summary="The Kanban Board project is a dynamic application developed using the MERN stack, aimed at streamlining task management. It incorporates a secure user authentication system, providing a convenient test user access option for those interested in exploring the application's features without immediate registration. Users can create personalized profiles, categorize tasks using the intuitive kanban board interface, and enjoy efficient task editing and deletion. The inclusion of date-based filtering enhances productivity, making task organization seamless. With a focus on user-friendly design, the Kanban Board project empowers users to manage tasks effortlessly and enhance their productivity."
-                        link="/"
+                        title="Portfolio"
+                        id={4}
+                        summary="Portfolio"
+                        link="https://keremilhan-portfolio.vercel.app"
                         type="Feautured Project"
-                        img={jobsterImg}
-                        github="/"
+                        img={portfolioImg}
+                        github="https://github.com/keremilhan/nextjs-portfolio"
+                    />
+                </div>
+                <div className="col-span-12 z-0">
+                    <FeaturedProject
+                        title="Kerem Board"
+                        id={2}
+                        summary="The Kerem Board project is a dynamic application developed using the MERN stack, aimed at streamlining task management. It incorporates a secure user authentication system, providing a convenient test user access option for those interested in exploring the application's features without immediate registration. Users can create personalized profiles, categorize tasks using the intuitive kanban board interface, and enjoy efficient task editing and deletion. The inclusion of date-based filtering enhances productivity, making task organization seamless. With a focus on user-friendly design, the Kerem Board project empowers users to manage tasks effortlessly and enhance their productivity."
+                        link="https://kerem-board-app.onrender.com"
+                        type="Feautured Project"
+                        img={keremBoardImg}
+                        github="https://github.com/keremilhan/kerem-board"
+                    />
+                </div>
+                <div className="col-span-12 z-0">
+                    <FeaturedProject
+                        title="Community Events"
+                        id={3}
+                        summary="Community Events is a fullstack project."
+                        link="https://community-events-frontend.vercel.app"
+                        type="Feautured Project"
+                        img={communityEventsImg}
+                        github="https://github.com/ink-tech-solutions/community-events-frontend"
                     />
                 </div>
                 <div className="col-span-6 z-0">
