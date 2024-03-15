@@ -5,10 +5,6 @@ import projects from '../../api/projects/data.json';
 
 const ProjectPage: React.FC<{ params: { id: number } }> = ({ params: { id } }) => {
     const [project, setProject] = useState<any>(null);
-    console.log('id', id);
-    console.log('projects', projects);
-    const projectss = projects.find(project => project.id === id);
-    console.log(projectss);
 
     useEffect(() => {
         async function fetchProject() {

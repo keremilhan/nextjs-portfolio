@@ -48,9 +48,9 @@
     },
     {
         "id": 2,
-        "repo_name": "kanban-board-project",
-        "title": "Kanban Board",
-        "summary": "The Kanban Board project is a full-stack personal task management application designed to help users organize and track their tasks efficiently. It was developed using the MERN stack (MongoDB, Express.js, React, Node.js), with a focus on providing an intuitive and dynamic user experience for task management.",
+        "repo_name": "kerem-board-project",
+        "title": "Kerem Board",
+        "summary": "Kerem Board project is a full-stack personal task management application designed to help users organize and track their tasks efficiently. It was developed using the MERN stack (MongoDB, Express.js, React, Node.js), with a focus on providing an intuitive and dynamic user experience for task management.",
         "key_features": [
             {
                 "name": "User Authentication",
@@ -58,7 +58,7 @@
             },
             {
                 "name": "Dynamic Kanban Board",
-                "feature": "The Kanban board interface offers dynamic task categorization within columns such as 'Open', 'In-Progress', and 'Done', allowing users to visually manage the progress of their tasks."
+                "feature": "Kerem board interface offers dynamic task categorization within columns such as 'Open', 'In-Progress', and 'Done', allowing users to visually manage the progress of their tasks."
             },
             {
                 "name": "Task Editing and Deletion",
@@ -70,23 +70,41 @@
             },
             {
                 "name": "Test User Access",
-                "feature": "For visitors who prefer not to sign up immediately, the Kanban Board project offers a test user option. This allows potential users to explore the application's features and interface without the commitment of registration."
+                "feature": "For visitors who prefer not to sign up immediately, Kerem Board project offers a test user option. This allows potential users to explore the application's features and interface without the commitment of registration."
             }
         ],
         "benefits": [
             {
                 "name": "Productive Task Management",
-                "feature": "The Kanban board approach simplifies task tracking and organization, helping users manage tasks more effectively and achieve their goals."
+                "feature": "Kerem board approach simplifies task tracking and organization, helping users manage tasks more effectively and achieve their goals."
             },
             {
                 "name": "Visual Progress Tracking",
-                "feature": "The visual nature of the Kanban board allows users to track task progress at a glance, improving task management and decision-making."
+                "feature": "The visual nature of Kerem Board allows users to track task progress at a glance, improving task management and decision-making."
             },
             {
                 "name": "User-Friendly Interface",
                 "feature": "The user-friendly interface enhances the overall experience, making it easy for users to adopt the application and integrate it into their workflow."
             }
         ],
-        "conclusion": "The Kanban Board project showcases the power of the MERN stack in developing a personalized task management solution. By combining user authentication, dynamic task visualization, and task-focused features, the project offers a comprehensive tool for users to streamline their task management process."
+        "conclusion": "Kerem Board project showcases the power of the MERN stack in developing a personalized task management solution. By combining user authentication, dynamic task visualization, and task-focused features, the project offers a comprehensive tool for users to streamline their task management process."
+    },
+    {
+        "id": 3,
+        "repo_name": "community-events-frontend",
+        "title": "Community Events",
+        "summary": "Community Events project is a full-stack app.",
+        "key_features": [],
+        "benefits": [],
+        "conclusion": "Community Events"
+    },
+    {
+        "id": 4,
+        "repo_name": "keremilhan-portfolio",
+        "title": "Portfolio Project",
+        "summary": "Portfolio Project",
+        "key_features": [],
+        "benefits": [],
+        "conclusion": "Portfolio Project"
     }
 ]
