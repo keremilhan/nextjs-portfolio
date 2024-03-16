@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import React, { Suspense, useEffect, useState } from 'react';
-import projects from '../../api/projects/data.json';
 
 const ProjectPage: React.FC<{ params: { id: number } }> = ({ params: { id } }) => {
     const [project, setProject] = useState<any>(null);
