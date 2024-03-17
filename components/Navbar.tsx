@@ -28,7 +28,9 @@ const CustomLink = ({ href, title, className = '' }: CustomLinkProps) => {
             {title}
             <span
                 className={`
-                h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathName === href ? 'w-full dark:bg-light' : 'w-0 dark:bg-light'} 
+                h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 cursor-pointer ${
+                    pathName === href ? 'w-full dark:bg-light' : 'w-0 dark:bg-light'
+                } 
             `}
             ></span>
         </Link>
@@ -137,12 +139,9 @@ const Navbar = () => {
             <div className="lg:m-auto hidden lg:inline-block">
                 <Logo />
             </div>
-            <div className="hidden md:inline-block">
+            <div className="hidden md:inline-block absolute right-0">
                 <HireMe />
             </div>
-            {/* <div className="absolute left-[50%] top-2 translate-x-[50%]">
-                <Logo />
-            </div> */}
         </header>
     );
 };
