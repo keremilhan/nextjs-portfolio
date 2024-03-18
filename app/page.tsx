@@ -35,9 +35,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="md:hidden">
-                <HireMe />
-            </div>
+            <HireMe />
             <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
                 <Image src={lightBulb} alt="Kerem İlhan" className="w-full h-auto"></Image>
             </div>

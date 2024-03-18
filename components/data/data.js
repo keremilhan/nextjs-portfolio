@@ -14,11 +14,11 @@ export const frameworks = [
     { image: '/images/svgs/django-color.svg', text: 'Django' },
 ];
 export const cssFrameworks = [
+    { image: '/images/svgs/styledcomponents-color.svg', text: 'Styled Components' },
     { image: '/images/svgs/sass-color.svg', text: 'SCSS/SASS' },
     { image: '/images/svgs/tailwindcss-color.svg', text: 'Tailwind  CSS' },
     { image: '/images/svgs/bootstrap-color.svg', text: 'Bootstrap' },
     { image: '/images/svgs/mui-color.svg', text: 'Material UI' },
-    { image: '/images/svgs/styledcomponents-color.svg', text: 'Styled Components' },
 ];
 export const otherSkills = [
     { image: '/images/svgs/rest-api.svg', text: 'RestAPI' },

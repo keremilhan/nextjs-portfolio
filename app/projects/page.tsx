@@ -48,14 +48,14 @@ const FeaturedProject: React.FC<{
                     <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>
                 </Link>
                 <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
-                <div className="w-full mt-2 flex items-center">
+                <div className="w-full mt-2 flex items-center xs:flex-col xs:justify-start xs:items-start xs:gap-2">
                     <Link className="w-10" href={github} target="_blank">
                         <GithubIcon />
                     </Link>
-                    <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base">
+                    <Link href={link} target="_blank" className="ml-4 xs:ml-0 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-2 sm:text-sm">
                         Visit Project
                     </Link>
-                    <Link href={`/projects/${id}`} className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark ml-auto">
+                    <Link href={`/projects/${id}`} className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark ml-auto xs:ml-0 sm:px-2 sm:text-sm">
                         Project Details
                     </Link>
                 </div>
