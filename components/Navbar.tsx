@@ -136,12 +136,12 @@ const Navbar = () => {
                     </nav>
                 </motion.div>
             )}
-            <div className="lg:m-auto hidden lg:inline-block">
+            <div className="lg:m-auto hidden lg:inline-block w-fit">
                 <Logo />
             </div>
-            <div className="hidden md:inline-block absolute right-0">
+            {/* <div className="hidden md:inline-block">
                 <HireMe />
-            </div>
+            </div> */}
         </header>
     );
 };
