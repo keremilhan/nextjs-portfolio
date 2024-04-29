@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const AnimatedNumbers: React.FC<{ value: any }> = ({ value }) => {
     const ref = useRef<HTMLSpanElement>(null);
@@ -33,6 +34,7 @@ const AnimatedNumbers: React.FC<{ value: any }> = ({ value }) => {
 const AboutPage = () => {
     return (
         <main className="flex w-full flex-col items-center justify-center pt-10 dark:text-light">
+            <TransitionEffect />
             <AnimatedText text="Passion Fuels Purpose!" className="mb-16 sm:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
             <div className="grid w-full grid-cols-8 gap-16 z-0 sm:gap-10">
                 <div className="col-span-3 xl:col-span-4 md:col-span-7 flex flex-col items-start justify-start gap-4 md:order-2">
