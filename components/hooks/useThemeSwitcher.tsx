@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useThemeSwitcher = () => {
     const preferDarkQuery = '(prefers-color-scheme: dark)';
@@ -28,13 +28,13 @@ const useThemeSwitcher = () => {
                     document.documentElement.classList.remove('dark');
                 }
             }
-            // let check = userPref === 'dark' ? 'dark' : 'light';
-            // setMode(check);
-            // if (check === 'dark') {
-            //     document.documentElement.classList.add('dark');
-            // } else {
-            //     document.documentElement.classList.remove('dark');
-            // }
+            let check = userPref === 'dark' ? 'dark' : 'light';
+            setMode(check);
+            if (check === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
         };
         handleChange();
         mediaQuery.addEventListener('change', handleChange);
