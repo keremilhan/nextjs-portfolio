@@ -86,17 +86,20 @@ const Navbar = () => {
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className={`w-6 rounded-full ${isOpen ? 'bg-dark dark:bg-light' : 'bg-light dark:bg-dark'}`}
+                        className={`w-8 rounded-full ${isOpen ? 'bg-dark dark:bg-light' : 'bg-light dark:bg-dark'}`}
                     >
                         <GithubIcon className="dark:fill-light" />
                     </motion.a>
                     {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <TwitterIcon />
                     </motion.a> */}
-                    <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
+                    <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
                         <LinkedInIcon />
                     </motion.a>
-                    <button className="flex items-center justify-center rounded-full p-1 dark:bg-light dark:text-dark bg-dark text-light " onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}>
+                    <button
+                        className="flex items-center justify-center rounded-full p-1 dark:bg-light dark:text-dark bg-dark text-light w-8"
+                        onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
+                    >
                         {mounted && mode === 'dark' ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
                     </button>
                 </nav>
@@ -114,18 +117,18 @@ const Navbar = () => {
                         <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
                         <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick} />
                     </nav>
-                    <nav className="flex items-center justify-center flex-wrap gap-6 sm:gap-3 mt-5">
-                        <motion.a href="https://github.com/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
+                    <nav className="flex items-center justify-center flex-wrap gap-6 sm:gap-3 mt-7">
+                        <motion.a href="https://github.com/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
                             <GithubIcon className="fill-light dark:fill-dark" />
                         </motion.a>
                         {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <TwitterIcon />
                         </motion.a> */}
-                        <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
+                        <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
                             <LinkedInIcon />
                         </motion.a>
                         <button
-                            className="flex items-center justify-center rounded-full p-1 dark:bg-light dark:text-dark bg-dark text-light "
+                            className="flex items-center justify-center rounded-full p-1 dark:bg-light dark:text-dark bg-dark text-light w-8"
                             onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
                         >
                             {mode === 'dark' ? <SunIcon className="fill-dark" /> : <MoonIcon className="fill-dark" />}
