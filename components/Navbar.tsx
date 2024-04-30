@@ -90,9 +90,9 @@ const Navbar = () => {
                     >
                         <GithubIcon className="dark:fill-light" />
                     </motion.a>
-                    <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
+                    {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <TwitterIcon />
-                    </motion.a>
+                    </motion.a> */}
                     <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <LinkedInIcon />
                     </motion.a>
@@ -114,13 +114,13 @@ const Navbar = () => {
                         <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
                         <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick} />
                     </nav>
-                    <nav className="flex items-center justify-center flex-wrap gap-6 sm:gap-3">
+                    <nav className="flex items-center justify-center flex-wrap gap-6 sm:gap-3 mt-5">
                         <motion.a href="https://github.com/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <GithubIcon className="fill-light dark:fill-dark" />
                         </motion.a>
-                        <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
+                        {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <TwitterIcon />
-                        </motion.a>
+                        </motion.a> */}
                         <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <LinkedInIcon />
                         </motion.a>
