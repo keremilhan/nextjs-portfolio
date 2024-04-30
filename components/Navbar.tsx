@@ -7,7 +7,6 @@ import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icon
 import { motion } from 'framer-motion';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 import { useRouter } from 'next/navigation';
-import HireMe from './HireMe';
 
 interface CustomLinkProps {
     href: string;
@@ -89,7 +88,7 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                         className={`w-6 rounded-full ${isOpen ? 'bg-dark dark:bg-light' : 'bg-light dark:bg-dark'}`}
                     >
-                        <GithubIcon className={`${mounted && mode === 'dark' ? 'fill-light' : 'fill-dark'}`} />
+                        <GithubIcon className="dark:fill-light" />
                     </motion.a>
                     <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <TwitterIcon />
@@ -117,7 +116,7 @@ const Navbar = () => {
                     </nav>
                     <nav className="flex items-center justify-center flex-wrap gap-6 sm:gap-3">
                         <motion.a href="https://github.com/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
-                            <GithubIcon className={`${mode === 'dark' ? 'fill-dark' : 'fill-light'}`} />
+                            <GithubIcon className="fill-light dark:fill-dark" />
                         </motion.a>
                         <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <TwitterIcon />
