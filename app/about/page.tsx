@@ -36,19 +36,28 @@ const AboutPage = () => {
         <main className="flex w-full flex-col items-center justify-center pt-10 dark:text-light">
             <TransitionEffect />
             <AnimatedText text="Passion Fuels Purpose!" className="mb-16 sm:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
-            <div className="grid w-full grid-cols-8 gap-16 z-0 sm:gap-10">
-                <div className="col-span-3 xl:col-span-4 md:col-span-7 flex flex-col items-start justify-start gap-4 md:order-2">
-                    <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">About me</h2>
-                    <p className="font-medium">
-                        Hi, I&apos;m Kerem, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With 2 years of experience in the field. I am
-                        always looking for new and innovative ways to bring my clients&apos; visions to life.
+            <div className="grid w-full grid-cols-10 gap-16 z-0 sm:gap-10">
+                <div className="col-span-5 xl:col-span-4 md:col-span-7 flex flex-col items-start justify-start gap-4 md:order-2">
+                    <h2 className="mb-4 text-2xl font-bold uppercase text-dark/90 dark:text-light/90 m-auto">About me</h2>
+                    <p className="font-medium break-words">
+                        I have almost 2.5 years of experience in web development but my expertise is beyond this. I have a strong ability to learn new things. I am very flexible and solution-oriented.
+                        I understand the business requirements and know my role in this perspective. Throughout my career, I have always delivered high quality and problem-solver software to my
+                        customers and the customers of the companies that I worked at.
                     </p>
                     <p className="font-medium">
-                        I believe that design is about more than just making things look pretty it&apos;s about solving problems and creating intuitive, enjoyable experiences for users.
+                        I have a strong foundation in frontend development, and particularly in React.js. I&apos;m proficient in HTML, CSS, and JavaScript and also TypeScript. Within the React
+                        ecosystem, I have some experience in utilizing frameworks such as Next.js for server-side rendering, as well as Node.js and Nest.js on the backend. I&apos;ve also worked with
+                        various CSS frameworks to ensure responsive and visually appealing designs. I have experience with state management solutions like Redux, and I have used Git as a version
+                        control tool, and as platforms such as GitHub and GitLab for collaborative coding. Additionally, I&apos;ve honed my skills in UI/UX principles and design aesthetics, allowing
+                        me to create user-friendly interfaces and optimize website performance. My adaptability to emerging technologies and frameworks ensures that I stay up-to-date with the evolving
+                        frontend landscape, enabling me to deliver high-quality software efficiently.
                     </p>
                     <p className="font-medium">
-                        Whether I&apos;m working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I
-                        look forward to the opportunity to bring my skills and passion to your next project.
+                        I have experience working with api and integrating them into frontend applications. Additionally, Thanks to my personal side projects, I have also gained experience in backend
+                        technologies such as Django, Node.js and Nest.js. So I have a good grasp of backend development. This helps me understand the whole process better and know what&apos;s going on
+                        behind the scenes when making frontend decisions. It makes it easier for me to understand the backend team&apos;s needs and also helps me explain my needs to them effectively.
+                        My commitment to staying up-to-date with the latest web technologies and best practices reflects my dedication to enhancing user experiences in my applications and delivering
+                        high quality software.
                     </p>
                 </div>
                 <div className="col-span-3 xl:col-span-4 md:col-span-7 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 xs:p-2 dark:bg-dark dark:border-light md:order-1">
