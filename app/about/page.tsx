@@ -37,7 +37,7 @@ const AboutPage = () => {
             <TransitionEffect />
             <AnimatedText text="Passion Fuels Purpose!" className="mb-16 sm:mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
             <div className="grid w-full grid-cols-10 gap-16 z-0 sm:gap-10">
-                <div className="col-span-5 xl:col-span-4 md:col-span-7 flex flex-col items-start justify-start gap-4 md:order-2">
+                <div className="col-span-5 xl:col-span-6 md:col-span-10 flex flex-col items-start justify-start gap-4 md:order-2">
                     <h2 className="mb-4 text-2xl font-bold uppercase text-dark/90 dark:text-light/90 m-auto">About me</h2>
                     <p className="font-medium break-words">
                         I have almost 2.5 years of experience in web development but my expertise is beyond this. I have a strong ability to learn new things. I am very flexible and solution-oriented.
@@ -60,11 +60,11 @@ const AboutPage = () => {
                         high quality software.
                     </p>
                 </div>
-                <div className="col-span-3 xl:col-span-4 md:col-span-7 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 xs:p-2 dark:bg-dark dark:border-light md:order-1">
+                <div className="col-span-3 xl:col-span-4 md:col-span-10 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 xs:p-2 dark:bg-dark dark:border-light md:order-1">
                     <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                     <Image priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src={ProfilePhoto} alt="Profile Image" className="w-full h-auto rounded-2xl" />
                 </div>
-                <div className="col-span-2 xl:col-span-7 xl:!flex-row flex flex-col items-end justify-between xl:items-center md:order-3">
+                <div className="col-span-2 xl:col-span-10 xl:!flex-row flex flex-col items-end justify-between xl:items-center md:order-3">
                     <div className="flex flex-col items-end justify-center xl:items-center">
                         <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                             <AnimatedNumbers value={5} />+
