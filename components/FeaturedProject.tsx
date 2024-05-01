@@ -41,7 +41,7 @@ const FeaturedProject: React.FC<{
                     <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>
                 </Link>
                 <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
-                <div className="w-full mt-2 flex items-center xs:justify-start justify-between xs:items-start gap-4">
+                <div className="w-full mt-2 flex items-center justify-between">
                     <Link href={link} target="_blank" className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-2 sm:text-sm">
                         Live
                     </Link>

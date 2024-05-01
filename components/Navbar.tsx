@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons';
@@ -66,9 +66,26 @@ const Navbar = () => {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    const containerRef = useRef<HTMLDivElement>(null);
+    const xRef = useRef<HTMLButtonElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (containerRef.current && !containerRef.current.contains(event.target as Node) && xRef.current && !xRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [setIsOpen]);
+
     return (
         <header className="w-full px-24 lg:px-16 md:px-12 sm:px-8 xs:px-2 py-8 font-medium flex items-center justify-between dark:text-light relative z-10">
-            <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
+            <button ref={xRef} className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -107,6 +124,7 @@ const Navbar = () => {
 
             {isOpen && (
                 <motion.div
+                    ref={containerRef}
                     initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.5 }}
@@ -136,7 +154,7 @@ const Navbar = () => {
                     </nav>
                 </motion.div>
             )}
-            <div className="lg:m-auto hidden lg:inline-block w-fit">
+            <div className="lg:m-auto hidden lg:inline-block sm:m-0 w-12">
                 <Logo />
             </div>
         </header>
