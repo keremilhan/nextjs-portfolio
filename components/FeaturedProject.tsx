@@ -45,7 +45,7 @@ const FeaturedProject: React.FC<{
                     <Link href={link} target="_blank" className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-2 sm:text-sm">
                         Live
                     </Link>
-                    <Link className="w-10" href={github} target="_blank">
+                    <Link className="w-10 md:w-8" href={github} target="_blank">
                         <GithubIcon className="dark:fill-light" />
                     </Link>
                     {/* Projects' detail page will be ready soon */}

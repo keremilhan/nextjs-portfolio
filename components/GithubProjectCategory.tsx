@@ -7,7 +7,7 @@ const GithubProjectCategory: React.FC<{
 }> = ({ title, link }) => {
     return (
         <Link href={link} target="_blank" className="flex justify-between items-center cursor-pointer gap-4 flex-wrap">
-            <div className="w-[240px] flex gap-3 mb-4 items-center bg-dark/20 dark:bg-light p-2 px-4 rounded-lg">
+            <div className="w-[240px] flex gap-3 mb-4 items-center bg-gray-200/60 dark:bg-light p-2 px-4 rounded-lg">
                 <div className="w-10">
                     <GithubIcon />
                 </div>
