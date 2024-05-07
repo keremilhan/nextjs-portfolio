@@ -22,7 +22,7 @@ const FeaturedProject: React.FC<{
             <Link
                 href={link}
                 target="_blank"
-                className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full border-2 border-spacing-4 border-dark/75 dark:border-light"
+                className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full border-2 border-spacing-4 border-dark/75 dark:border-light self-center"
                 title="Click for Project Details"
             >
                 <FramerImage

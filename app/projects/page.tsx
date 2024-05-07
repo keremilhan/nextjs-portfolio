@@ -11,6 +11,7 @@ import aroniaWebsiteImg from '../../public/images/projects/aronia-website.png';
 import blackjackAppImg from '../../public/images/projects/blackjack-app.png';
 import portfolioImg from '../../public/images/projects/portfolio.png';
 import communityEventsImg from '../../public/images/projects/community-events.png';
+import rangeSliderImg from '../../public/images/projects/react-range-slider.png';
 import TransitionEffect from '@/components/TransitionEffect';
 import GithubProjectCategory from '@/components/GithubProjectCategory';
 import FeaturedProject from '@/components/FeaturedProject';
@@ -31,6 +32,17 @@ const ProjectsPage = () => {
                             <GithubProjectCategory title="Javascript Projects" link="https://github.com/keremilhan/JavaScript-Projects" />
                             <GithubProjectCategory title="Ink Tech Solutions" link="https://github.com/orgs/ink-tech-solutions/repositories" />
                         </div>
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
+                            title="React Range Slider"
+                            id={1}
+                            summary="The React Range Slider package offers a customizable and accessible range input component for React applications, simplifying the selection of values within a defined range. With features like customizable appearance, event handling, and responsive design, it caters to diverse use cases, from form controls to data visualization tools. Its aim is to streamline the implementation of range input functionality, enhancing user experience and facilitating the creation of interactive and user-friendly interfaces in React projects. Whether for form validation, data filtering, or interactive charts, the React Range Slider provides a versatile solution for developers seeking to integrate range selection capabilities into their applications."
+                            link="https://www.npmjs.com/package/@inkdev/react-range-slider"
+                            type="Feautured Project"
+                            img={rangeSliderImg}
+                            github="https://github.com/ink-tech-solutions/react-range-slider"
+                        />
                     </div>
                     <div className="col-span-12 z-0">
                         <FeaturedProject
@@ -77,7 +89,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Jobster App"
-                            id={1}
+                            id={4}
                             summary="Jobster is a MERN stack project designed to simplify job hunting. It features user authentication, allowing hassle-free exploration via a test account. Users can create profiles, track job applications, and monitor their progress. With an intuitive dashboard, Jobster offers efficiency and organization for users seeking their next career move."
                             link="https://jobster-fullstack-project.onrender.com"
                             type="Feautured Project"
@@ -94,7 +106,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Kerem Portfolio"
-                            id={4}
+                            id={5}
                             summary="Hello, and welcome to my portfolio! I'm a passionate full-stack developer with a focus on crafting seamless, user-friendly web experiences. With expertise in both front-end and back-end development, I thrive on bringing ideas to life through code."
                             link="https://keremilhan-portfolio.vercel.app"
                             type="Feautured Project"
