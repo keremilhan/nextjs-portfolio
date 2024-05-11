@@ -13,7 +13,7 @@ const Details: React.FC<{
             <div>
                 <h3 className="capitilize font-bold text-2xl sm:text-xl xs:text-lg">
                     {position}&nbsp;{' '}
-                    <a href={companyLink} target="_blank" className="text-primary dark:text-primaryDark capitalize">
+                    <a href={companyLink} target={companyLink === '#' ? '' : '_blank'} className="text-primary dark:text-primaryDark capitalize">
                         @{company}
                     </a>
                 </h3>
@@ -40,7 +40,7 @@ const Experience = () => {
                 <div className="absolute left-8 top-0 w-[4px] h-full bg-dark/75 dark:bg-light/75 md:left-0" />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs-ml-2">
                     <Details
-                        position="Volunteer Tech Mentor"
+                        position="Software Developer Mentor - Volunteer"
                         company="HackYourFuture"
                         companyLink="https://www.hackyourfuture.net"
                         time="Mar 2024 - Present"
@@ -53,9 +53,22 @@ const Experience = () => {
                         ]}
                     />
                     <Details
-                        position="Tech Mentor"
+                        position="Software Developer"
+                        company="Freelance"
+                        companyLink="#"
+                        time="Jan 2024 - Present"
+                        address="Netherlands"
+                        work={[
+                            'Successfully collaborated with numerous clients to understand their unique requirements and translate them into actionable development plans, ensuring alignment with their business objectives.',
+                            'Leveraged my technical prowess to design, develop, and deploy bespoke software solutions tailored to meet the specific needs and challenges of each client, ranging from web applications to mobile apps and beyond.',
+                            'Demonstrated strong project management skills in overseeing the entire software development lifecycle, from initial concept and design to implementation, testing, and deployment, ensuring projects are delivered on time and within budget.',
+                            'Proactively stay abreast of emerging technologies, trends, and best practices within the software development landscape, consistently refining my skills and adopting new tools and methodologies to enhance the quality and efficiency of my work.',
+                        ]}
+                    />
+                    <Details
+                        position="Software Developer Mentor"
                         company="Independent/Personal Initiative"
-                        companyLink="https://keremilhan-portfolio.vercel.app"
+                        companyLink="#"
                         time="Oct 2022 - Present"
                         address="Remote"
                         work={[
@@ -70,23 +83,10 @@ const Experience = () => {
                     />
                     <Details
                         position="Software Developer"
-                        company="Freelance"
-                        companyLink="https://keremilhan-portfolio.vercel.app"
-                        time="Jan 2024 - Present"
-                        address="Netherlands"
-                        work={[
-                            'Successfully collaborated with numerous clients to understand their unique requirements and translate them into actionable development plans, ensuring alignment with their business objectives.',
-                            'Leveraged my technical prowess to design, develop, and deploy bespoke software solutions tailored to meet the specific needs and challenges of each client, ranging from web applications to mobile apps and beyond.',
-                            'Demonstrated strong project management skills in overseeing the entire software development lifecycle, from initial concept and design to implementation, testing, and deployment, ensuring projects are delivered on time and within budget.',
-                            'Proactively stay abreast of emerging technologies, trends, and best practices within the software development landscape, consistently refining my skills and adopting new tools and methodologies to enhance the quality and efficiency of my work.',
-                        ]}
-                    />
-                    <Details
-                        position="Software Developer"
                         company="Perculus"
                         companyLink="https://www.perculus.com"
                         time="Aug 2022 - Jan 2024"
-                        address="Türkiye"
+                        address="Remote"
                         work={[
                             "Successfully developed and launched unique icebreaker activities for the company's product, resulting in a significant increase in sales and customer satisfaction.",
                             'I elevated the development ecosystem of an internal library, enhancing its functionality and streamlining the process of constructing activities.',
@@ -98,21 +98,15 @@ const Experience = () => {
                         ]}
                     />
                     <Details
-                        position="Fullstack Developer Trainee"
-                        company="Clarusway"
-                        companyLink="https://www.clarusway.com"
-                        time="Jan 2022 - Nov 2022"
-                        address="USA (Remote)"
+                        position="Software Developer"
+                        company="Belderia"
+                        companyLink="#"
+                        time="Aug 2020 - Aug 2022"
+                        address="Remote"
                         work={[
-                            'Acquired proficiency in frontend development using HTML5, CSS3, JavaScript, and React.',
-                            'Designed and developed interactive and responsive websites using HTML, CSS, SASS(SCSS), Bootstrap-5, and React libraries.',
-                            'Utilized JS Dom manipulation and event listeners for HTML/CSS projects',
-                            '•	Implemented API requests using Async, Await, and Fetch for data retrieval from various platforms.',
-                            'Proficient in using React-router, bootstrap, Axios, Tailwind, Material UI, Styled Components, and SASS/SCSS for building user-friendly websites.',
-                            'Hands-on experience in state management using React States, Context API, useReducer, and Redux.',
-                            'Adept at writing modular, reusable code, and familiar with build tools and package managers.',
-                            'Gained expertise in computational thinking, operating systems, Linux, version control systems, and software development life cycle (SDLC).',
-                            'Worked in Agile methodologies, SCRUM, and JIRA in individual and group projects.',
+                            "Built website development using HTML, CSS, and JavaScript for company's e-commerce platform.",
+                            'Implemented crucial enhancements and resolved bugs, resulting in a notable 50% surge in website traffic.',
+                            'Orchestrated improvements to the digital presence, culminating in a remarkable 200% rise in customer acquisition.',
                         ]}
                     />
                 </ul>
