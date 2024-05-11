@@ -41,9 +41,9 @@ const AboutPage = () => {
                     <div className="w-full text-lg flex flex-col items-start justify-start gap-4 md:order-2">
                         <h2 className="mb-4 text-3xl font-bold uppercase text-dark/90 dark:text-light/90 m-auto">About me</h2>
                         <p className="font-medium break-words">
-                            I have almost 2.5 years of experience in web development but my expertise is beyond this. I have a strong ability to learn new things. I am very flexible and
-                            solution-oriented. I understand the business requirements and know my role in this perspective. Throughout my career, I have always delivered high quality and
-                            problem-solver software to my customers and the customers of the companies that I worked at.
+                            I have 4 years of experience in web development but my expertise is beyond this. I have a strong ability to learn new things. I am very flexible and solution-oriented. I
+                            understand the business requirements and know my role in this perspective. Throughout my career, I have always delivered high quality and problem-solver software to my
+                            customers and the customers of the companies that I worked at.
                         </p>
                         <p className="font-medium">
                             I have a strong foundation in frontend development, and particularly in React.js. I&apos;m proficient in HTML, CSS, and JavaScript and also TypeScript. Within the React
