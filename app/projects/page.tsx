@@ -1,17 +1,21 @@
 'use client';
 import AnimatedText from '@/components/AnimatedText';
 import React from 'react';
-import jobsterImg from '../../public/images/projects/jobster-app.jpg';
-import keremBoardImg from '../../public/images/projects/kerem-board.png';
-import newsAppImg from '../../public/images/projects/news-app.png';
-import countriesAppImg from '../../public/images/projects/countries-app.png';
-import movieAppImg from '../../public/images/projects/movie-app.png';
-import hangmanGameImg from '../../public/images/projects/hangman-game.png';
-import aroniaWebsiteImg from '../../public/images/projects/aronia-website.png';
-import blackjackAppImg from '../../public/images/projects/blackjack-app.png';
-import portfolioImg from '../../public/images/projects/portfolio.png';
-import communityEventsImg from '../../public/images/projects/community-events.png';
-import rangeSliderImg from '../../public/images/projects/react-range-slider.png';
+import {
+    jobsterImg,
+    keremBoardImg,
+    newsAppImg,
+    countriesAppImg,
+    movieAppImg,
+    hangmanGameImg,
+    aroniaWebsiteImg,
+    blackjackAppImg,
+    portfolioImg,
+    communityEventsImg,
+    rangeSliderImg,
+    urlShortenerImg,
+    upcomingMoviesImg,
+} from '@/public/images/projects';
 import TransitionEffect from '@/components/TransitionEffect';
 import GithubProjectCategory from '@/components/GithubProjectCategory';
 import FeaturedProject from '@/components/FeaturedProject';
@@ -35,8 +39,30 @@ const ProjectsPage = () => {
                     </div>
                     <div className="col-span-12 z-0">
                         <FeaturedProject
-                            title="React Range Slider"
+                            title="Url Shortener"
                             id={1}
+                            summary="This project is a full stack application designed to manage shortened URLs. It includes features for user registration, authentication, and URL management. Users can create, edit, and delete their shortened URLs through a user-friendly dashboard. Additionally, the application supports redirection from shortened URLs to the intended target URLs."
+                            link="https://url-shortener-kerem.vercel.app"
+                            type="Feautured Project"
+                            img={urlShortenerImg}
+                            github="https://github.com/keremilhan/url-shortener"
+                        />
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
+                            title="Upcoming Movies"
+                            id={2}
+                            summary="This Upcoming Movies App provides users with a seamless experience to search for upcoming movies and view their details. Built with modern React tools and libraries, it ensures fast performance, smooth navigation, and an appealing design."
+                            link="https://upcoming-movies-app.netlify.app"
+                            type="Feautured Project"
+                            img={upcomingMoviesImg}
+                            github="https://github.com/keremilhan/upcoming-movies-web-app"
+                        />
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
+                            title="React Range Slider"
+                            id={3}
                             summary="The React Range Slider package offers a customizable and accessible range input component for React applications, simplifying the selection of values within a defined range. With features like customizable appearance, event handling, and responsive design, it caters to diverse use cases, from form controls to data visualization tools. Its aim is to streamline the implementation of range input functionality, enhancing user experience and facilitating the creation of interactive and user-friendly interfaces in React projects. Whether for form validation, data filtering, or interactive charts, the React Range Slider provides a versatile solution for developers seeking to integrate range selection capabilities into their applications."
                             link="https://www.npmjs.com/package/@inkdev/react-range-slider"
                             type="Feautured Project"
@@ -47,7 +73,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Kerem Board"
-                            id={2}
+                            id={4}
                             summary="A dynamic application which incorporates a secure user authentication system, providing a convenient test user access option for those interested in exploring the application's features without immediate registration. Users can create personalized profiles, categorize tasks using the intuitive kanban board interface. The inclusion of date-based filtering enhances productivity, making task organization seamless."
                             link="https://kerem-board-app.onrender.com"
                             type="Feautured Project"
@@ -64,7 +90,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Community Events"
-                            id={3}
+                            id={5}
                             summary="A dynamic platform designed with the most recent technologies like Nextjs, Nestjs and TailwindCSS to empower users to organize and participate in a wide array of events. Whether it's a local meetup, workshop, or cultural gathering, this project provides a seamless experience for event creators and attendees alike. It is still an unfinished and ongoing project."
                             link="https://community-events-frontend.vercel.app"
                             type="Feautured Project"
@@ -89,7 +115,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Jobster App"
-                            id={4}
+                            id={6}
                             summary="Jobster is a MERN stack project designed to simplify job hunting. It features user authentication, allowing hassle-free exploration via a test account. Users can create profiles, track job applications, and monitor their progress. With an intuitive dashboard, Jobster offers efficiency and organization for users seeking their next career move."
                             link="https://jobster-fullstack-project.onrender.com"
                             type="Feautured Project"
@@ -106,7 +132,7 @@ const ProjectsPage = () => {
                     <div className="col-span-12 z-0">
                         <FeaturedProject
                             title="Kerem Portfolio"
-                            id={5}
+                            id={7}
                             summary="Hello, and welcome to my portfolio! I'm a passionate full-stack developer with a focus on crafting seamless, user-friendly web experiences. With expertise in both front-end and back-end development, I thrive on bringing ideas to life through code."
                             link="https://keremilhan-portfolio.vercel.app"
                             type="Feautured Project"
