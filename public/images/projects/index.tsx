@@ -11,6 +11,9 @@ import communityEventsImg from './community-events.png';
 import rangeSliderImg from './react-range-slider.png';
 import urlShortenerImg from './url-shortener.png';
 import upcomingMoviesImg from './upcoming-movies.png';
+import spaceXRocketsImg from './spaceX-rockets.png';
+import heartRateImg from './heart-rate.png';
+import windGuideImg from './wind-guide.png';
 
 export {
     jobsterImg,
@@ -26,4 +29,7 @@ export {
     rangeSliderImg,
     urlShortenerImg,
     upcomingMoviesImg,
+    spaceXRocketsImg,
+    heartRateImg,
+    windGuideImg,
 };

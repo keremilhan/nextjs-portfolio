@@ -30,4 +30,4 @@ export const otherSkills = [
     { image: '/images/svgs/github-color.svg', text: 'Github' },
     { image: '/images/svgs/gitlab-color.svg', text: 'GitLab' },
 ];
-export const libraries = [{ text: 'Chart.js' }, { text: 'React-Charts-2' }];
+export const libraries = [{ image: '/images/svgs/apex-charts.svg', text: 'Apex Charts' }, { text: 'Chart.js' }, { text: 'React-Charts-2' }];
