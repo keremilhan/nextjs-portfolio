@@ -1,13 +1,17 @@
 import React from 'react';
+import { calculateDateDifference } from '@/utils/functions';
 
 const Details: React.FC<{
     position: string;
     company: string;
     companyLink: string;
-    time: string;
+    startTime: string;
+    endTime: string;
     address: string;
     work: any[];
-}> = ({ position, company, companyLink, time, address, work }) => {
+    summary: string;
+}> = ({ position, company, companyLink, startTime, endTime, address, work, summary }) => {
+    const expTime = calculateDateDifference(startTime, endTime);
     return (
         <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
             <div>
@@ -18,14 +22,24 @@ const Details: React.FC<{
                     </a>
                 </h3>
                 <span className="capitilize font-medium text-dark/75 xs:text-sm">
-                    {time} | {address}
+                    {startTime} - {endTime} | {address} ({expTime})
                 </span>
+                <p className="font-light italic w-full list-disc md:text-sm">{summary}</p>
                 <ul className="mt-2 flex flex-col gap-2 ml-5">
-                    {work.map((bullet, index) => (
-                        <li key={`${bullet}_${index}`} className="font-medium w-full list-disc md:text-sm">
-                            {bullet}
-                        </li>
-                    ))}
+                    {work.map((bullet, index) => {
+                        if (index === 0) {
+                            return (
+                                <li key={`${bullet}_${index}`} className="font-bold w-full list-disc md:text-sm">
+                                    {bullet}
+                                </li>
+                            );
+                        }
+                        return (
+                            <li key={`${bullet}_${index}`} className="font-medium w-full list-disc md:text-sm">
+                                {bullet}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </li>
@@ -40,73 +54,70 @@ const Experience = () => {
                 <div className="absolute left-8 top-0 w-[4px] h-full bg-dark/75 dark:bg-light/75 md:left-0" />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs-ml-2">
                     <Details
-                        position="Software Developer Mentor - Volunteer"
-                        company="HackYourFuture"
-                        companyLink="https://www.hackyourfuture.net"
-                        time="Mar 2024 - Present"
-                        address="Netherlands"
-                        work={[
-                            'Conducting thorough code reviews for assignments submitted by students, providing constructive feedback to help them refine their coding skills and improve code quality.',
-                            'Collaborating closely with students, offering personalized guidance and mentoring sessions to address their specific learning needs and challenges.',
-                            'Organizing coding sessions and workshops as needed, facilitating interactive learning experiences and hands-on practice to reinforce technical concepts and foster skill development.',
-                            'Mentoring students on software development best practices, coding standards, and effective problem-solving strategies to enhance their readiness for real-world projects.',
-                        ]}
-                    />
-                    <Details
                         position="Software Developer"
                         company="Freelance"
                         companyLink="#"
-                        time="Jan 2024 - Present"
+                        startTime="Nov 2024"
+                        endTime="Present"
                         address="Netherlands"
+                        summary="Developed a reporting system for an international shipping company, enabling crew members to create detailed noon reports and office staff to analyze data through tables and charts."
                         work={[
-                            'Successfully collaborated with numerous clients to understand their unique requirements and translate them into actionable development plans, ensuring alignment with their business objectives.',
-                            'Leveraged my technical prowess to design, develop, and deploy bespoke software solutions tailored to meet the specific needs and challenges of each client, ranging from web applications to mobile apps and beyond.',
-                            'Demonstrated strong project management skills in overseeing the entire software development lifecycle, from initial concept and design to implementation, testing, and deployment, ensuring projects are delivered on time and within budget.',
-                            'Proactively stay abreast of emerging technologies, trends, and best practices within the software development landscape, consistently refining my skills and adopting new tools and methodologies to enhance the quality and efficiency of my work.',
+                            'Tech Stack: Django, Python, Javascript, Docker, SQLite',
+                            'Designed and implemented a backend system to generate, store, and retrieve noon reports for shipping crews.',
+                            'Developed a dashboard for office staff to visualize reports using tables and charts for enhanced data-driven decision-making.',
+                            'Integrated carbon value calculations to help monitor and manage the environmental impact of ships.',
+                            'Collaborated closely with stakeholders to ensure the project met the operational needs of both on-board crews and office staff.',
+                            'Deployed the project using Docker, ensuring scalability and efficient environment management.',
                         ]}
                     />
                     <Details
-                        position="Software Developer Mentor"
-                        company="Independent/Personal Initiative"
-                        companyLink="#"
-                        time="Oct 2022 - Present"
-                        address="Remote"
+                        position="Software Developer Mentor - Volunteer"
+                        company="HackYourFuture"
+                        companyLink="https://www.hackyourfuture.net"
+                        startTime="Mar 2024"
+                        endTime="Present"
+                        address="Netherlands"
+                        summary="HackYourFuture empowers individuals with refugee backgrounds to become web developers through a free program. I am working as a Volunteer Mentor."
                         work={[
-                            'Providing one-on-one mentorship sessions to individuals interested in breaking into the tech industry.',
-                            'Offering guidance on technical skills development, career planning, and job search strategies.',
-                            'Sharing industry insights, best practices, and resources to support mentees in their journey.',
-                            'Tailoring mentorship approaches to meet the unique needs and goals of each mentee.',
-                            'Collaborating with mentees to identify opportunities for skill enhancement and professional growth.',
-                            'Successfully mentored 5 individuals, helping them secure internships, entry-level positions, and career transitions within the tech sector.',
-                            'Received positive feedback from mentees for providing valuable guidance, support, and encouragement throughout their career journey.',
+                            'Tech Stack: Javascript, React, Node.JS',
+                            'Reviewing assignments submitted by students, providing feedback to help them improve their coding skills',
+                            'Organizing coding sessions and workshops as needed.',
+                            'Mentoring students on best practices and coding standards to enhance their readiness for real-world projects.',
+                            'Collaborating with fellow mentors to develop and refine the curriculum, ensuring it meets industry standards and addresses current trends in web development.',
+                            'Facilitating one-on-one sessions with students to provide personalized guidance and support tailored to their individual learning paths.',
                         ]}
                     />
                     <Details
                         position="Software Developer"
                         company="Perculus"
                         companyLink="https://www.perculus.com"
-                        time="Aug 2022 - Jan 2024"
+                        startTime="Aug 2022"
+                        endTime="Jan 2024"
                         address="Remote"
+                        summary="Perculus is a browser based e-learning platform. You can organize meetings on Perculus, this platform explicitly focuses on e-learning and education. I worked as a Software Developer where I was mainly responsible for creating real time and interactive applications from scratch and improved an internal library which is used actively in our development processes."
                         work={[
-                            "Successfully developed and launched unique icebreaker activities for the company's product, resulting in a significant increase in sales and customer satisfaction.",
-                            'I elevated the development ecosystem of an internal library, enhancing its functionality and streamlining the process of constructing activities.',
-                            'I implemented optimizations to the library, elevating its performance and effectively elevating the efficiency of its usage.',
-                            'Utilized Git, GitLab, and GitHub for version control and code collaboration.',
-                            "Contributed to the growth of the company's product by creating activities that resonated with customers and helped to drive product sales.",
-                            'Improved product engagement and customer experience by creating interactive and entertaining icebreaker activities that received positive feedback from users.',
-                            'Demonstrated strong project management skills by delivering the tasks on time and within budget.',
+                            'Tech Stack: Typescript, Javascript, React, Node.JS, PostgreSQL, Socket.io, SCSS, Styled Components',
+                            'Created 5 unique real time and interactive applications from scratch by using mainly React, Typescript, WebSocket and an internal library, resulting increase in sales by 150% and customer satisfaction.',
+                            'Improved and contributed the functionality of an internal library which is used actively in development processes by using Node.js, Typescript.',
+                            'Implemented performance optimizations on available applications resulting in a 60% improvement in performance.',
+                            'Demonstrated strong project management skills, consistently delivering tasks on time and within budget.',
+                            'Reason for leaving:** Relocated to the Netherlands.',
                         ]}
                     />
                     <Details
                         position="Software Developer"
                         company="Belderia"
                         companyLink="#"
-                        time="Aug 2020 - Aug 2022"
+                        startTime="Aug 2020"
+                        endTime="Aug 2022"
                         address="Remote"
+                        summary='A leading manufacturer of high-quality bicycles, I worked as a Software Developer where I was responsible for enhancing and maintaining the company"s e-commerce platform.'
                         work={[
-                            "Built website development using HTML, CSS, and JavaScript for company's e-commerce platform.",
-                            'Implemented crucial enhancements and resolved bugs, resulting in a notable 50% surge in website traffic.',
-                            'Orchestrated improvements to the digital presence, culminating in a remarkable 200% rise in customer acquisition.',
+                            'Tech Stack: Typescript, Javascript, React, SCSS, Bootstrap, Node.JS',
+                            "Migrated company''s e-commerce platform from legacy code to modern technologies.",
+                            'Resolved bugs and made improvements resulting in a notable 70% increase in website traffic.',
+                            'Organized the digital presence of the company resulting in a remarkable 200% increase in customer numbers.',
+                            'Reason for leaving: Relocated to another city.',
                         ]}
                     />
                 </ul>

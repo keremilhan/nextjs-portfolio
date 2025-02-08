@@ -15,6 +15,9 @@ import {
     rangeSliderImg,
     urlShortenerImg,
     upcomingMoviesImg,
+    spaceXRocketsImg,
+    heartRateImg,
+    windGuideImg,
 } from '@/public/images/projects';
 import TransitionEffect from '@/components/TransitionEffect';
 import GithubProjectCategory from '@/components/GithubProjectCategory';
@@ -39,6 +42,28 @@ const ProjectsPage = () => {
                     </div>
                     <div className="col-span-12 z-0">
                         <FeaturedProject
+                            title="Heart Rate App"
+                            id={1}
+                            summary="A full-stack application for tracking heart rate measurements. Users can log in, view their heart rate data visualized in a chart, and receive real-time updates of their measurements."
+                            link="https://heart-rate-app-keremilhan.vercel.app"
+                            type="Feautured Project"
+                            img={heartRateImg}
+                            github="https://github.com/keremilhan/heart-rate-app"
+                        />
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
+                            title="SpaceX Rockets"
+                            id={1}
+                            summary="This project is a frontend application built with React and TypeScript that consumes the SpaceX API to display information about rocket launches and estimate their energy consumption. The application is designed to help users visualize the energy impact of space travel."
+                            link="https://space-x-api-eight.vercel.app"
+                            type="Feautured Project"
+                            img={spaceXRocketsImg}
+                            github="https://github.com/keremilhan/spaceX-api"
+                        />
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
                             title="Url Shortener"
                             id={1}
                             summary="This project is a full stack application designed to manage shortened URLs. It includes features for user registration, authentication, and URL management. Users can create, edit, and delete their shortened URLs through a user-friendly dashboard. Additionally, the application supports redirection from shortened URLs to the intended target URLs."
@@ -46,6 +71,17 @@ const ProjectsPage = () => {
                             type="Feautured Project"
                             img={urlShortenerImg}
                             github="https://github.com/keremilhan/url-shortener"
+                        />
+                    </div>
+                    <div className="col-span-12 z-0">
+                        <FeaturedProject
+                            title="Wind Guide"
+                            id={1}
+                            summary="A full-stack application called Wind Guide, designed to visualize routing data and incorporate real-time wind conditions. This tool helps bike riders anticipate headwind or tailwind along their routes, enhancing their riding experience."
+                            link="https://wind-guide.vercel.app"
+                            type="Feautured Project"
+                            img={windGuideImg}
+                            github="https://github.com/keremilhan/wind-guide"
                         />
                     </div>
                     <div className="col-span-12 z-0">
