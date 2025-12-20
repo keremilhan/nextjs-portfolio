@@ -41,24 +41,26 @@ const AboutPage = () => {
                     <div className="w-full text-lg flex flex-col items-start justify-start gap-4 md:order-2">
                         <h2 className="mb-4 text-3xl font-bold uppercase text-dark/90 dark:text-light/90 m-auto">About me</h2>
                         <p className="font-medium break-words">
-                            I have 4 years of experience in web development but my expertise is beyond this. I have a strong ability to learn new things. I am very flexible and solution-oriented. I
-                            understand the business requirements and know my role in this perspective. Throughout my career, I have always delivered high quality and problem-solver software to my
-                            customers and the customers of the companies that I worked at.
+                            Fullstack developer with a proven track record of delivering high-impact web applications across diverse industries—from medical imaging to maritime logistics. Currently
+                            building scalable reporting systems at JohnSnowLabs, combining technical excellence with strong product ownership. I specialize in architecting and implementing complex,
+                            performance-optimized user interfaces while designing robust backend services. My technical toolkit centers on <strong>Python (FastAPI, Django), React, TypeScript, and NestJS</strong>, with
+                            a focus on writing maintainable, scalable code that solves real business problems.
                         </p>
+                        <div className="font-medium">
+                            <strong>What I bring:</strong>
+                            <ul className="list-disc ml-6 mt-2 flex flex-col gap-1">
+                                <li><strong>End-to-end ownership:</strong> From technical design and Figma-to-production UI implementation to backend architecture and long-term maintenance</li>
+                                <li><strong>Performance-driven:</strong> Consistently optimize frontend rendering, API efficiency, and system responsiveness (achieved up to 60% performance improvements)</li>
+                                <li><strong>Product mindset:</strong> Shape feature scope and technical decisions through close collaboration with product managers, designers, and stakeholders</li>
+                                <li><strong>Specialized experience:</strong> Medical imaging systems (OpenSeadragon, OHIF Viewer integration), real-time applications (Socket.io), and complex data visualization</li>
+                            </ul>
+                        </div>
                         <p className="font-medium">
-                            I have a strong foundation in frontend development, and particularly in React.js. I&apos;m proficient in HTML, CSS, and JavaScript and also TypeScript. Within the React
-                            ecosystem, I have some experience in utilizing frameworks such as Next.js for server-side rendering, as well as Node.js and Nest.js on the backend. I&apos;ve also worked
-                            with various CSS frameworks to ensure responsive and visually appealing designs. I have experience with state management solutions like Redux, and I have used Git as a
-                            version control tool, and as platforms such as GitHub and GitLab for collaborative coding. Additionally, I&apos;ve honed my skills in UI/UX principles and design
-                            aesthetics, allowing me to create user-friendly interfaces and optimize website performance. My adaptability to emerging technologies and frameworks ensures that I stay
-                            up-to-date with the evolving frontend landscape, enabling me to deliver high-quality software efficiently.
-                        </p>
-                        <p className="font-medium">
-                            I have experience working with api and integrating them into frontend applications. Additionally, Thanks to my personal side projects, I have also gained experience in
-                            backend technologies such as Django, Node.js and Nest.js. So I have a good grasp of backend development. This helps me understand the whole process better and know
-                            what&apos;s going on behind the scenes when making frontend decisions. It makes it easier for me to understand the backend team&apos;s needs and also helps me explain my
-                            needs to them effectively. My commitment to staying up-to-date with the latest web technologies and best practices reflects my dedication to enhancing user experiences in
-                            my applications and delivering high quality software.
+                            Beyond my day-to-day work, I&apos;m passionate about giving back to the tech community. As a volunteer mentor at <strong>HackYourFuture</strong> since 2024, I guide aspiring developers with
+                            refugee backgrounds through code reviews, workshops, and career preparation—helping them build the skills and confidence needed for their first tech roles. I thrive in
+                            environments that value clean architecture, modern engineering practices, and continuous learning. Whether it&apos;s integrating microscopy viewers into medical workflows
+                            or building internal component libraries, I&apos;m driven by the challenge of turning complex requirements into elegant, user-friendly solutions. <strong>Let&apos;s connect</strong> if
+                            you&apos;re working on challenging problems in web development, building impactful products, or passionate about engineering excellence and mentorship.
                         </p>
                     </div>
                     <div className="w-[33%] md:w-[50%] sm:w-full relative h-max rounded-2xl border-2 sm:border-4 border-solid border-dark bg-light p-8 xl:p-6 md:p-4 xs:p-1 dark:bg-dark dark:border-light md:order-1">
