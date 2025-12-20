@@ -110,7 +110,7 @@ const Navbar = () => {
                     {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                         <TwitterIcon />
                     </motion.a> */}
-                    <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
+                    <motion.a href="https://linkedin.com/in/kerem-ilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
                         <LinkedInIcon />
                     </motion.a>
                     <button
@@ -142,7 +142,7 @@ const Navbar = () => {
                         {/* <motion.a href="https://twitter.com" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6">
                             <TwitterIcon />
                         </motion.a> */}
-                        <motion.a href="https://linkedin.com/in/keremilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
+                        <motion.a href="https://linkedin.com/in/kerem-ilhan" target="_blank" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-8">
                             <LinkedInIcon />
                         </motion.a>
                         <button
